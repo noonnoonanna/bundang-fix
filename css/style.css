@@ -48,15 +48,62 @@ header {
   grid-column: 7;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-  gap: 10px;
+  align-items: flex-start;
+  gap: 8px; height: 40px;
 }
 
-.partner-logo a img {
-    height: 40px;
-    width: auto;
-    cursor: pointer;
-    display: block;
+.call-bubble {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  /* 기존 40px에서 33px로 변경 */
+  height: 33px;
+  padding: 0 11px;
+
+  color: #ffffff;
+  background-color: #0E3180;
+  border-radius: 6px;
+
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.call-bubble::after {
+  content: "";
+  position: absolute;
+
+  left: 50%;
+  bottom: -7px;
+  transform: translateX(-50%);
+
+  width: 0;
+  height: 0;
+
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 7px solid #0E3180;
+}
+
+.header-blog,
+.partner-logo a:not(.call-bubble) {
+  display: flex;
+  align-items: flex-start;
+}
+
+.partner-logo img {
+  display: block;
+  width: auto;
+
+  /* 블로그는 꼬리를 포함한 전체 높이 */
+  height: 40px;
 }
 
 .nav {
@@ -74,7 +121,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  font-size: 17px;
+  font-size: 19px;
   font-weight: 600;
   color: #0E3180;
   cursor: pointer;
@@ -183,7 +230,7 @@ header:hover .mega-menu {
 }
 .hero h1 { font-size: 2.2rem; margin-bottom: 1.2rem; line-height: 1.2; text-shadow: none; color: #fff; }
 .hero p { font-size: 1.3rem; margin-bottom: 2.5rem; color: rgba(255,255,255,0.9); }
-.point  {color:#d1ffe9; font-size: 3.2rem;}
+.point  {color:#0E3180; font-size: 3.2rem;}
 .fx-underline{position:relative; color:#fff; text-shadow:4px 7px 7px #333;}
 .fx-underline::after{content:""; position:absolute; left:0; right:0; bottom:-3px; z-index: -2; height:10px; background:linear-gradient(90deg,#b2f1d6,#0E3180); transform:scaleX(0); transform-origin: left; animation:underline 1.2s .5s ease-out forwards}
 @keyframes underline{to{transform:scaleX(1)}}
@@ -214,7 +261,6 @@ header:hover .mega-menu {
 }
 
 .point {
-    color: #00425f; /*#00e5ff; */
     font-weight: 700;
     font-size: 3.4rem;
     text-shadow: 0 0 10px #b3e8ff; /*rgba(0, 229, 255, 0.5);*/
@@ -1090,7 +1136,7 @@ header:hover .mega-menu {
 }
 
 .footer-logo {
-  width: 180px;    /* 🔥 로고 크게 */
+  width: 195px;    /* 🔥 로고 크게 */
   height: auto;
 }
 
@@ -1264,9 +1310,10 @@ header:hover .mega-menu {
   .logo img { height: 36px; }
   .nav, .mega-menu { display: none !important; }
   .hamburger { display: block; }
-  .partner-logo { display: flex; grid-column: 2; justify-content: center; margin-top:2px; margin-left:13px; gap:0px; }
-  .partner-logo img { height: 17px; width: auto; margin-right: 5px; }
-  .partner-logo a img { height: 28px; margin-right: 5px; cursor:pointer; width: auto; }
+  .partner-logo { display: flex; grid-column: 2; justify-content: center; margin-top:2px; margin-left:13px; gap:0px; align-items: flex-start;}
+  .call-bubble { height: 23px; padding: 0 8px; border-radius: 4px; font-size: 11px; }
+  .call-bubble::after { bottom: -5px; border-left-width: 5px; border-right-width: 5px; border-top-width: 5px; }
+  .partner-logo img { height: 28px;}
 
 .icon-plus, .icon-minus, .mobile-sub {display:block;}
   /* 모바일 메뉴 열렸을 때 */
