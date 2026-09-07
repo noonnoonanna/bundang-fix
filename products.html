@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>제이씨메디칼(JCMedical)</title>
+  <meta name="description" content="제이씨메디칼(JCMedical, JC메디칼) 오스테오시스 전문 대리점">
+  <meta name="keywords" content="제이씨메디칼, JC메디칼, jcmedical, 오스테오시스, 골밀도, 충격파, 심전도, 환자감시모니터, 중고 초음파, 토르리프팅">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="제이씨메디칼(JCMedical)">
+  <meta property="og:description" content="골밀도, 충격파, 심전도, 환자감시모니터, 중고 초음파, 토르리프팅">
+  <meta property="og:url" content="https://jcmedi.com/">
+  <meta property="og:image" content="https://jcmedi.com/img/logo.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "제이씨메디칼 (JCMedical, JC메디칼)",
+    "description": "제이씨메디칼(JC메디칼) 오스테오시스 전문 대리점",
+    "url": "https://jcmedi.com/",
+    "telephone": "070-4651-5088",
+    "address": {
+      "@type": "PostalAddress",
+	  "postalCode": "13647",
+	  "addressRegion": "경기",
+      "addressLocality": "성남시 수정구",
+	  "streetAddress": "위례서로24, 위례행복빌딩3층 303호"
+    },
+    "keywords": "제이씨메디칼, JC메디칼, jcmedical, 오스테오시스, 골밀도, 충격파, 심전도, 환자감시모니터, 중고 초음파, 토르리프팅"
+  }
+  </script>
+  <meta name="author" content="JCMedical">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" sizes="192x192" href="/favicon-192.png">
+  <link rel="apple-touch-icon" href="/favicon-180.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/products.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/app.js"></script>
+  <meta name="naver-site-verification" content="02772589406b6b3355207d270257fc00db805a91" />
+</head>
+<body>
+<header>
+    <div class="header-inner">
+        <a href="/" class="logo">
+            <img src="img/logo_long.png" alt="제이씨메디칼(jc메디칼) 로고">
+        </a>
+        
+        <nav class="nav">
+            <ul class="nav-menu">
+                <li class="nav-item">
+					<a href="#">회사소개 <span class="icon-plus">+</span><span class="icon-minus">-</span></a>
+					<ul class="mobile-sub">
+						<li><a href="about.html">인사말</a></li>
+						<li><a href="about.html#location">오시는길</a></li>
+					</ul>
+				</li>
+                <li class="nav-item">
+					<a href="#">PRODUCT <span class="icon-plus">+</span><span class="icon-minus">-</span></a>
+					<ul class="mobile-sub">
+						<li><a href="products.html?cat=bmd">골밀도진단기 (BMD)</a></li>
+						<li><a href="products.html?cat=eswt">체외충격파 (ESWT)</a></li>
+						<!--<li><a href="products.html?cat=ultrasound">초음파진단기 (Ultrasound / SONO)</a></li>-->
+						<li><a href="products.html?cat=freq">고주파기기 (TORR RF)</a></li>
+						<li><a href="products.html?cat=used">중고장비</a></li>
+					</ul>
+				</li>
+                <li class="nav-item">
+					<a href="notice.html">공지사항</a>
+				</li>
+                <li class="nav-item">
+					<a href="contact.html">문의하기</a>
+				</li>
+            </ul>
+        </nav>
+		
+		<div class="partner-logo">
+			<div class="vendor-logos">
+				<img src="img/os_logo.png" alt="OsteoSys">
+				<!--<img src="img/min_logo.png" alt="Mindray">-->
+			</div>
+			<a href="http://pf.kakao.com/_pdvjn/chat" target="_blank"><img src="img/kakao.png" alt="kakao"></a>
+			<a href="https://blog.naver.com/jcmedical0826" target="_blank"><img src="img/blog.png" alt="naver blog"></a>
+		</div>
+        
+        <div class="hamburger">☰</div>
+    </div>
+
+    <div class="mega-menu">
+        <div class="mega-inner">
+            <div class="mega-col">
+                <a href="about.html">인사말</a>
+				<a href="about.html#location">오시는길</a>
+            </div>
+        
+            <div class="mega-col">
+				<a href="products.html?cat=bmd">골밀도진단기 (BMD)</a>
+				<a href="products.html?cat=eswt">체외충격파 (ESWT)</a>
+				<!--<a href="products.html?cat=ultrasound">초음파진단기<br>(Ultrasound / SONO)</a>-->
+				<a href="products.html?cat=freq">고주파기기 (TORR RF)</a>
+                <a href="products.html?cat=used">중고장비</a>
+            </div>
+        
+            <div class="mega-col">
+                <a href="notice.html">공지사항</a>
+            </div>
+        
+            <div class="mega-col">
+                <a href="contact.html">문의하기</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="sub-visual">
+    <div class="visual-text">
+        <h2>PRODUCT</h2>
+        <p>JC Medical이 제안하는 최첨단 의료 솔루션을 확인하세요.</p>
+    </div>
+</section>
+
+<div class="content-wrapper">
+    <section>
+        <div class="list-header" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:30px;">            
+            <a href="product_write.html" id="admin-write-btn" class="btn btn-point" data-admin-only>제품 등록</a>
+        </div>
+
+<div class="product-section">
+    <div id="loadingIndicator" class="loader-container" style="display:none;">
+		<div class="spinner"></div>
+		<p>Loading...</p>
+	</div>
+	<!-- JS로 렌더링될 영역 -->
+    <div id="productList" class="product-grid">        
+        <!-- 동적 로드 시 이 부분에 자바스크립트로 생성된 태그들이 들어갑니다 -->
+    </div>
+</div>
+    </section>
+<style>
+[data-admin-only] {
+  display: none;
+}
+</style>
+<script>
+	const staticProducts = {
+		bmd: `
+			<div class="product-card" onclick="window.open('https://osteosys.com/product/dexxum-t/', '_blank')">
+				<div class="thumb"><img src="img/DT/DT 2.jpg"></div>
+				<div class="info">
+					<div class="card-header">
+						<span class="category">골밀도진단기</span>
+					</div>
+					<h4>OsteoSys DEXXUM T</h4>							
+					<div class="more-btn">상세보기</div>
+				</div>
+			</div>
+			<div class="product-card" onclick="window.open('https://osteosys.com/product/dexxum-t-quantum/', '_blank')">
+				<div class="thumb"><img src="img/DTQ/DTQ_2.jpg"></div>
+				<div class="info">
+					<div class="card-header">
+						<span class="category">골밀도진단기</span>
+					</div>
+					<h4>OsteoSys DEXXUM T Quantum</h4>							
+					<div class="more-btn">상세보기</div>
+				</div>
+			</div>
+			<div class="product-card" onclick="window.open('https://osteosys.com/product/quantum-pro/', '_blank')">
+				<div class="thumb"><img src="img/EXCELLUS/quantum-pro.png"></div>
+				<div class="info">
+					<div class="card-header">
+						<span class="category">골밀도진단기</span>
+					</div>
+					<h4>OsteoSys Quantum Pro</h4>							
+					<div class="more-btn">상세보기</div>
+				</div>
+			</div>
+			<div class="product-card" onclick="window.open('https://osteosys.com/product/excellus/', '_blank')">
+				<div class="thumb"><img src="img/EXCELLUS/EXCELLUS 1.png"></div>
+				<div class="info">
+					<div class="card-header">
+						<span class="category">골밀도진단기</span>
+					</div>
+					<h4>OsteoSys EXCELLUS</h4>							
+					<div class="more-btn">상세보기</div>
+				</div>
+			</div>
+			<div class="product-card" onclick="window.open('https://osteosys.com/product/primus/', '_blank')">
+				<div class="thumb"><img src="img/PRIMUS/PRIMUS_1.jpg"></div>
+				<div class="info">
+					<div class="card-header">
+						<span class="category">골밀도진단기</span>
+					</div>
+					<h4>OsteoSys PRIMUS</h4>							
+					<div class="more-btn">상세보기</div>
+				</div>
+			</div>
+		`,
+		eswt: `
+			<div class="product-card" onclick="window.open('https://osteosys.com/product/sonicure-f-r/', '_blank')">
+				<div class="thumb"><img src="img/eswt-bc4377-b.png"></div>
+				<div class="info">
+					<div class="card-header">
+						<span class="category">체외충격파</span>
+					</div>
+					<h4>OsteoSys SoniCure F/R</h4>							
+					<div class="more-btn">상세보기</div>
+				</div>
+			</div>
+		`,
+	};
+		
+	async function initPage() {
+		const params = new URLSearchParams(window.location.search);
+		const categoryParam = params.get('cat');
+		const grid = document.getElementById('productList');
+		
+		// 0. 초기화: 그리드를 비웁니다.
+		grid.innerHTML = '';
+		
+		if (!categoryParam) {        
+			// 모든 정적 제품들을 먼저 넣습니다.
+			const allStatic = Object.values(staticProducts).join('');
+			grid.innerHTML = allStatic;
+			
+			// 그 다음 중고장비 데이터를 불러와서 뒤에 붙입니다.
+			await loadProducts(true); 
+		} else if (categoryParam === 'used' || categoryParam === 'freq') {
+			const loading = document.getElementById('loadingIndicator');
+			if (loading) loading.style.display = 'block';
+			await loadProducts(false);
+		} else {
+			if (staticProducts[categoryParam]) {
+				grid.innerHTML = staticProducts[categoryParam];
+			} else {
+				grid.innerHTML = `<p style="text-align:center">해당 카테고리의 제품이 없습니다.</p>`;
+			}
+		}
+	}
+
+    async function loadProducts(isAppend = false) { 
+		const params = new URLSearchParams(window.location.search);
+		const categoryParam = params.get('cat');
+		const categoryMap = {bmd: '골밀도진단기', eswt: '체외충격파', used: '중고 장비', freq: '고주파기기'};
+
+		let query = supabaseClient
+			.from('products')
+			.select('*', { count: 'exact' })
+			.in('category', ['used', 'freq'])
+			
+		if (categoryParam) {
+			query = query.eq('category', categoryParam);
+		}
+
+		const { data, error } = await query;
+  			
+		if (error) {
+			console.error('데이터 로드 실패:', error.message);
+			return;
+		}	
+
+        const grid = document.getElementById('productList');
+		if (!grid) return;
+        if (grid) {
+			const usedHtml = data.map(p =>{
+				const categoryLabel = categoryMap[p.category] ?? p.category;
+				const linkUrl = p.url && p.url.trim() !== '' ? p.url : `product_view.html?id=${p.id}`;
+				const linkTarget = p.url && p.url.trim() !== '' ? '_blank' : '_self';
+				
+				return `
+					<div class="product-card" onclick="window.open('${linkUrl}', '${linkTarget}')">
+						<div class="thumb"><img src="${p.image_url}"></div>
+						<div class="info">
+							<div class="card-header">
+								<span class="category">${categoryLabel}</span>
+							</div>
+							<h4>${p.title}</h4>							
+							<div class="more-btn">상세보기</div>
+						</div>
+					</div>
+				`;}).join('');
+			
+			if (isAppend) {
+				// 기존 정적 제품들 뒤에 중고장비 추가
+				grid.insertAdjacentHTML('beforeend', usedHtml);
+			} else {
+				// 중고장비만 표시
+				grid.innerHTML = usedHtml || `<p style="text-align:center; grid-column:1/-1;">등록된 중고 장비가 없습니다.</p>`;
+			}
+			const loading = document.getElementById('loadingIndicator');
+			if (loading) loading.style.display = 'none';
+		}
+			
+		if (categoryParam && data.length === 0) {
+			grid.innerHTML = `<p style="text-align:center">해당 카테고리의 제품이 없습니다.</p>`;
+			return;
+		}
+    }
+    
+	window.addEventListener('DOMContentLoaded', initPage);
+				
+</script>	
+</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+
+    <div class="footer-logo-area">
+      <img src="img/logo.png" alt="JC Medical" class="footer-logo">
+    </div>
+	
+	<div class="footer-text-area">
+      <p class="footer-info">
+        Address: 경기도 성남시 수정구 위례서로24, 위례행복빌딩3층 303호<br>
+        Tel: 070-4651-5088<br>
+        E-mail: jcmedi0826@naver.com<Br>
+		사업자번호: 512-13-30045
+      </p>
+	  
+	  <div class="footer-links">
+      <a href="policy.html?tab=terms">이용약관</a>
+      <span class="divider">|</span>
+      <a href="policy.html?tab=privacy">개인정보처리방침</a>
+    </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 JC Medical. All rights reserved.
+  </div>
+</footer>
+		<!--ultrasound: `
+			<div class="product-card" onclick="window.open('https://www.mindray.com/en/products/ultrasound/point-of-care/te-air-e5m', '_blank')">
+				<div class="thumb"><img src="img/pro3_e5m.jpg"></div>
+				<div class="info">
+					<div class="card-header">
+						<span class="category">초음파진단기</span>
+					</div>
+					<h4>Mindray TE Air e5M</h4>							
+					<div class="more-btn">상세보기</div>
+				</div>
+			</div>
+			<div class="product-card" onclick="window.open('https://www.mindray.com/en/products/ultrasound/general-imaging/resona-i9', '_blank')">
+				<div class="thumb"><img src="img/resonai9.jpg"></div>
+				<div class="info">
+					<div class="card-header">
+						<span class="category">초음파진단기</span>
+					</div>
+					<h4>Mindray Resona I9</h4>							
+					<div class="more-btn">상세보기</div>
+				</div>
+			</div>
+			<div class="product-card" onclick="window.open('https://www.mindray.com/en/products/ultrasound/women-health/consona-n-series', '_blank')">
+				<div class="thumb"><img src="img/pro2_con.jpg"></div>
+				<div class="info">
+					<div class="card-header">
+						<span class="category">초음파진단기</span>
+					</div>
+					<h4>Mindray Consona 시리즈</h4>							
+					<div class="more-btn">상세보기</div>
+				</div>
+			</div>
+			<div class="product-card" onclick="window.open('https://www.mindray.com/en/products/ultrasound/primary-care/consona-n9', '_blank')">
+				<div class="thumb"><img src="img/n9.jpg"></div>
+				<div class="info">
+					<div class="card-header">
+						<span class="category">초음파진단기</span>
+					</div>
+					<h4>Mindray Consona N9</h4>							
+					<div class="more-btn">상세보기</div>
+				</div>
+			</div>
+			<div class="product-card" onclick="window.open('https://www.mindray.com/en/products/ultrasound/primary-care/consona-n8', '_blank')">
+				<div class="thumb"><img src="img/n8.jpg"></div>
+				<div class="info">
+					<div class="card-header">
+						<span class="category">초음파진단기</span>
+					</div>
+					<h4>Mindray Consona N8</h4>							
+					<div class="more-btn">상세보기</div>
+				</div>
+			</div>
+			<div class="product-card" onclick="window.open('https://www.mindray.com/en/products/ultrasound/primary-care/consona-n7', '_blank')">
+				<div class="thumb"><img src="img/n7.jpg"></div>
+				<div class="info">
+					<div class="card-header">
+						<span class="category">초음파진단기</span>
+					</div>
+					<h4>Mindray Consona N7</h4>							
+					<div class="more-btn">상세보기</div>
+				</div>
+			</div>
+			<div class="product-card" onclick="window.open('https://www.mindray.com/en/products/ultrasound/primary-care/consona-n6', '_blank')">
+				<div class="thumb"><img src="img/n6.png"></div>
+				<div class="info">
+					<div class="card-header">
+						<span class="category">초음파진단기</span>
+					</div>
+					<h4>Mindray Consona N6</h4>							
+					<div class="more-btn">상세보기</div>
+				</div>
+			</div>
+		`,-->
+</body>
+</html>
