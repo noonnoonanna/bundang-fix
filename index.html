@@ -117,7 +117,7 @@
   <link rel="icon" sizes="32x32" href="/favicon-32.png">
   <link rel="icon" sizes="192x192" href="/favicon-192.png">
   <link rel="apple-touch-icon" href="/favicon-180.png">
-  <link rel="stylesheet" href="css/style.css?v260122">
+  <link rel="stylesheet" href="css/style.css?v2609091005">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap">
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
@@ -128,6 +128,7 @@
   ></script>
   -->
   <meta name="naver-site-verification" content="">
+  <link rel="preload" as="image" href="img/banner1.webp" type="image/webp" fetchpriority="high">
 </head>
 
 <body>
@@ -213,9 +214,15 @@
   </div>
   <div class="swiper heroSwiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="img/banner1.png" alt="분당 종합 집수리 및 주택 보수"></div>
-	  <div class="swiper-slide"><img src="img/banner2.png" alt="분당 부분 철거 및 실내 보수 공사"></div>
-	  <div class="swiper-slide"><img src="img/banner3.png" alt="분당 하수도 및 배관 공사"></div>
+		<div class="swiper-slide">
+			<img src="img/banner1.webp" alt="분당 종합 집수리 및 주택 보수" width="1920" height="1080" loading="eager" fetchpriority="high" decoding="async">
+		</div>		
+		<div class="swiper-slide">
+			<img src="img/banner2.webp"	alt="분당 부분 철거 및 실내 보수 공사" width="1920" height="1080" loading="eager" fetchpriority="high" decoding="async">
+		</div>		
+		<div class="swiper-slide">
+			<img src="img/banner3.webp"	alt="분당 하수도 및 배관 공사" width="1920" height="1080" loading="eager" fetchpriority="high" decoding="async">
+		</div>
     </div>
   </div>
 </section>
@@ -284,19 +291,21 @@
 <!-- 기존 <section class="products">부터 해당 서비스 슬라이드의 </script>, </style>까지 지우고 아래 코드로 교체하세요. -->
 <section class="products" aria-labelledby="serviceTitle">
   <div class="container">
-    <div class="service-heading">
-      <span class="service-eyebrow">BUNDANG TOTAL REPAIR</span>
-      <h2 class="section-title" id="serviceTitle">서비스 안내</h2>
-      <p class="service-intro">
-        작은 보수부터 배관·하수도·철거 공사까지<br>
-        현장에 필요한 작업을 한 번에 상담해 드립니다.
-      </p>
-    </div>
+	<div class="service-heading">
+		<span class="service-eyebrow">BUNDANG TOTAL REPAIR</span>
+		<h2 class="section-title" id="serviceTitle">서비스 안내</h2>
+		<strong class="service-message">
+			집수리, 어디서부터 손대야 할지 모르겠다면<br>
+			먼저 상담해 보세요.
+		</strong>
+		<p class="service-intro">작은 보수부터 배관·하수도·방수·철거 공사까지,<br>현장 확인부터 시공까지 한 번에 도와드립니다.</p>
+		<p class="service-target">주택 · 아파트 · 빌딩 · 공공시설 · 공장</p>
+	</div>
 
     <div class="service-grid">
       <a class="service-card" href="service.html?cat=31">
         <div class="service-image">
-          <img src="img/service/service-pipe.jpg" alt="세면대 하부 수도 배관을 점검하고 수리하는 모습" loading="lazy">
+          <img src="img/service/service-pipe.webp" alt="세면대 하부 수도 배관을 점검하고 수리하는 모습" loading="lazy">
           <span class="service-number" aria-hidden="true">01</span>
         </div>
         <div class="service-content">
@@ -308,7 +317,7 @@
 
       <a class="service-card" href="service.html?cat=41">
         <div class="service-image">
-          <img src="img/service/service-sewer.jpg" alt="소형 굴착기로 하수도와 지중 배관을 시공하는 모습" loading="lazy">
+          <img src="img/service/service-sewer.webp" alt="소형 굴착기로 하수도와 지중 배관을 시공하는 모습" loading="lazy">
           <span class="service-number" aria-hidden="true">02</span>
         </div>
         <div class="service-content">
@@ -320,7 +329,7 @@
 
       <a class="service-card" href="service.html?cat=11">
         <div class="service-image">
-          <img src="img/service/service-bathroom.jpg" alt="욕실 바닥과 배수구를 정비하는 모습" loading="lazy">
+          <img src="img/service/service-bathroom.webp" alt="욕실 바닥과 배수구를 정비하는 모습" loading="lazy">
           <span class="service-number" aria-hidden="true">03</span>
         </div>
         <div class="service-content">
@@ -332,7 +341,7 @@
 
       <a class="service-card" href="service.html">
         <div class="service-image">
-          <img src="img/service/service-waterproof.jpg" alt="옥상 바닥에 방수재를 시공하는 모습" loading="lazy">
+          <img src="img/service/service-waterproof.webp" alt="옥상 바닥에 방수재를 시공하는 모습" loading="lazy">
           <span class="service-number" aria-hidden="true">04</span>
         </div>
         <div class="service-content">
@@ -344,7 +353,7 @@
 
       <a class="service-card" href="service.html">
         <div class="service-image">
-          <img src="img/service/service-demolition.jpg" alt="실내 벽체를 철거하고 정리하는 작업 모습" loading="lazy">
+          <img src="img/service/service-demolition.webp" alt="실내 벽체를 철거하고 정리하는 작업 모습" loading="lazy">
           <span class="service-number" aria-hidden="true">05</span>
         </div>
         <div class="service-content">
@@ -356,7 +365,7 @@
 
       <a class="service-card" href="service.html">
         <div class="service-image">
-          <img src="img/service/service-repair.jpg" alt="실내 벽면을 보수하고 마감하는 작업 모습" loading="lazy">
+          <img src="img/service/service-repair.webp" alt="실내 벽면을 보수하고 마감하는 작업 모습" loading="lazy">
           <span class="service-number" aria-hidden="true">06</span>
         </div>
         <div class="service-content">
@@ -365,20 +374,6 @@
           <span class="service-more">자세히 보기 <i aria-hidden="true">→</i></span>
         </div>
       </a>
-    </div>
-
-	<div class="service-consult">
-      <div class="service-consult-copy">
-        <span class="service-consult-label">현장 확인부터 시공까지</span>
-        <strong>집수리, 어디서부터 손대야 할지<br>모르겠다면 먼저 상담해 보세요.</strong>
-        <p>주택 · 아파트 · 빌딩 · 공공시설 · 공장</p>
-      </div>
-
-      <div class="service-consult-action">
-        <span>빠른 상담</span>
-        <a class="service-consult-tel" href="tel:01031230471">010-3123-0471</a>
-        <a class="service-consult-btn" href="contact.html">상담·견적 문의</a>
-      </div>
     </div>
   </div>
 </section>
@@ -399,8 +394,8 @@
 }
 
 .service-heading {
-  position: relative;
-  margin-bottom: 46px;
+  max-width: 760px;
+  margin: 0 auto 48px;
   text-align: center;
 }
 
@@ -410,17 +405,18 @@
   color: #5c6f91;
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: .18em;
+  line-height: 1.4;
+  letter-spacing: 0.18em;
 }
 
 .products .section-title {
-  margin: 0 0 14px;
+  margin: 0;
   padding: 0;
   color: #14213d;
   font-size: clamp(32px, 4vw, 46px);
   font-weight: 800;
   line-height: 1.2;
-  letter-spacing: -.045em;
+  letter-spacing: -0.045em;
 }
 
 .products .section-title::after {
@@ -428,14 +424,40 @@
   display: block;
   width: 42px;
   height: 3px;
-  margin: 18px auto 0;
+  margin: 18px auto 22px;
   border-radius: 999px;
   background: #0e3180;
 }
 
+.service-message {
+  display: block;
+  margin-bottom: 14px;
+  color: #17243d;
+  font-size: clamp(21px, 2.4vw, 28px);
+  font-weight: 800;
+  line-height: 1.5;
+  letter-spacing: -0.04em;
+  word-break: keep-all;
+}
+
 .service-intro {
+  margin: 0;
   color: #687386;
-  font-size: 19px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+  word-break: keep-all;
+}
+
+.service-target {
+  display: inline-block;
+  margin: 20px 0 0;
+  padding: 9px 18px;
+  border-radius: 999px;
+  color: #0e3180;
+  background: rgba(14, 49, 128, 0.07);
+  font-size: 14px;
+  font-weight: 700;
   line-height: 1.5;
   word-break: keep-all;
 }
@@ -543,178 +565,78 @@
   transform: translateX(4px);
 }
 
-.service-consult {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 250px;
-  gap: 44px;
-  align-items: center;
-  margin-top: 36px;
-  padding: 42px 46px;
-  border: 1px solid #e5eaf1;
-  background: #fff;
-}
-
-.service-consult-copy {
-  min-width: 0;
-}
-
-.service-consult-label {
-  display: block;
-  margin-bottom: 10px;
-  color: #0e3180;
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: .04em;
-}
-
-.service-consult-copy strong {
-  display: block;
-  color: #17243d;
-  font-size: clamp(22px, 2.4vw, 30px);
-  font-weight: 800;
-  line-height: 1.45;
-  letter-spacing: -.04em;
-  word-break: keep-all;
-}
-
-.service-consult-copy p {
-  margin: 15px 0 0;
-  color: #717b8b;
-  font-size: 20px;
-  font-weight: 500;
-  word-break: keep-all;
-}
-
-.service-consult-action {
-  padding-left: 34px;
-  border-left: 1px solid #e2e7ef;
-}
-
-.service-consult-action > span {
-  display: block;
-  margin-bottom: 5px;
-  color: #788292;
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.service-consult-tel {
-  display: block;
-  margin-bottom: 17px;
-  color: #17243d;
-  font-size: 23px;
-  font-weight: 800;
-  line-height: 1.3;
-  letter-spacing: -.025em;
-  white-space: nowrap;
-}
-
-.service-consult-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  min-height: 48px;
-  padding: 0 22px;
-  border-radius: 3px;
-  color: #fff;
-  background: #0e3180;
-  font-size: 16px;
-  font-weight: 700;
-  white-space: nowrap;
-  transition: background-color .25s ease, transform .25s ease;
-}
-
-.service-consult-btn:hover {
-  background: #163f99;
-  transform: translateY(-2px);
-}
-
 @media (max-width: 900px) {
   .products { padding: 82px 16px; }
   .service-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .service-consult {
-    grid-template-columns: minmax(0, 1fr) 220px;
-    gap: 28px;
-    padding: 36px 32px;
-  }
-
-  .service-consult-action { padding-left: 28px; }
 }
 
 @media (max-width: 600px) {
   .products { padding: 64px 14px; }
-  .service-heading { margin-bottom: 32px; }
+  .service-heading { margin-bottom: 34px; }
   .products .section-title { font-size: 32px; }
-  .service-intro { font-size: 14px; }
+  .products .section-title::after { margin: 15px auto 19px; }
+  .service-message {
+    font-size: 21px;
+    line-height: 1.5;
+  }
+  .service-intro {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  .service-target {
+    margin-top: 17px;
+    padding: 8px 14px;
+    font-size: 12px;
+  }
   .service-grid { grid-template-columns: 1fr; gap: 18px; }
   .service-card:hover { transform: none; }
   .service-content { min-height: 166px; padding: 22px 20px 20px; }
   .service-content::before { left: 20px; }
   .service-content h3 { font-size: 20px; }
   .service-more { right: 20px; bottom: 19px; }
-  .service-consult {
-    grid-template-columns: 1fr;
-    gap: 24px;
-    margin-top: 24px;
-    padding: 30px 22px 22px;
-  }
-
-  .service-consult-copy strong { font-size: 23px; }
-
-  .service-consult-action {
-    padding: 22px 0 0;
-    border-top: 1px solid #e2e7ef;
-    border-left: 0;
-  }
-
-  .service-consult-tel { font-size: 22px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .service-card,
   .service-image img,
-  .service-more i,
-  .service-consult-btn { transition: none; }
+  .service-more i { transition: none; }
 }
 
 </style>
 
 <section class="notice-map-section">
-  <h2 class="section-title">분당 종합 집수리</h2>  
-    <div class="notice container">        
-        <div class="grid-layout">
-		
-<div class="notice-area">
-    <div class="area-header">
-        <h3>PARTNERSHIP</h3>
+  <div class="notice container">
+    <div class="location-heading">
+      <span class="location-label">LOCATION</span>
+      <h2 class="section-title">오시는 길</h2>
+      <p>분당 종합 집수리 위치를 안내해 드립니다.</p>
     </div>
-    <div class="partnership-content">
-        <p class="slogan">의료 기술의 혁신,<br><strong>JC Medical</strong>이 귀사의 든든한 파트너가 되겠습니다.</p>
-        
-        <ul class="contact-features">
-            <li><span>✓</span> 의료기기 도입 및 구매 상담</li>
-            <li><span>✓</span> 유지보수 및 기술 지원 서비스</li>
-            <li><span>✓</span> 신규 비즈니스 협업 제안</li>
-        </ul>
-		
-		<div class="contact-bottom">
-			<div class="btn-group">
-				<a href="contact.html" class="btn-partner btn-email">이메일 문의하기</a>
-				<a href="http://pf.kakao.com/_pdvjn/chat" target="_blank" class="btn-partner btn-kakao">카카오 문의하기</a>
-			</div>
-		</div>
-    </div>
-</div>
 
-            <div class="map-area">
-                <div class="area-header">
-                    <h3>찾아오시는 길</h3>
-                </div>
-                <div id="kakaomap" class="map-box"></div>
-            </div>
+    <div class="map-area location-map-wrap">
+
+      <div id="kakaomap" class="map-box"></div>
+
+      <div class="location-info">
+        <span class="location-company">분당 종합 집수리</span>
+        <address>경기도 성남시 분당구<br>느티로69번길 19</address>
+
+        <a class="location-tel" href="tel:01031230471">
+          <span>전화</span>
+          <strong>010-3123-0471</strong>
+        </a>
+
+        <div class="location-buttons">
+          <a
+            class="location-route"
+            href="https://map.kakao.com/link/search/경기도 성남시 분당구 느티로69번길 19"
+            target="_blank"
+            rel="noopener noreferrer"
+          >길찾기</a>
+          <a class="location-call" href="tel:01031230471">전화하기</a>
         </div>
+      </div>
     </div>
+  </div>
 </section>
 
 <footer class="site-footer">
@@ -787,63 +709,222 @@ window.addEventListener("load", function() {
 });
 </script>
 <style>
-/* 메인 페이지 오시는길 & 문의하기 섹션 */
 .notice-map-section {
-    padding: 80px 0;
-    background-color: #fcfcfc;
+  padding: 100px 16px;
+  background: #f5f7fa;
 }
 
-.section-title {
-    font-size: 36px;
-    font-weight: 800;
-    color: #0E3180
-    text-align: center;
-    margin-bottom: 50px;
-    text-transform: uppercase;
+.notice-map-section .notice.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
 }
 
-.grid-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* 1:1 비율 */
-    gap: 40px;
+.location-heading {
+  margin-bottom: 34px;
+  text-align: center;
 }
 
-/* 공통 헤더 스타일 */
-.area-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #0E3180;
-    padding-bottom: 15px;
-    margin-bottom: 20px;
+.location-label {
+  display: block;
+  margin-bottom: 9px;
+  color: #62708a;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .18em;
 }
 
-.area-header h3 {
-    font-size: 22px;
-    font-weight: 700;
-    color: #333;
+.notice-map-section .location-heading .section-title {
+  margin: 0;
+  padding: 0;
+  color: #14213d;
+  font-size: clamp(32px, 4vw, 46px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -.045em;
 }
 
-/* 지도 박스 디자인 */
-.map-box {
-    width: 100%;
-    height: 350px;
-    background: #eee;
-    filter: grayscale(0.1); /* 살짝 무채색 처리 */
-    border: 1px solid #e2e8f0;
+.notice-map-section .location-heading .section-title::after {
+  content: "";
+  display: block;
+  width: 42px;
+  height: 3px;
+  margin: 18px auto 14px;
+  border-radius: 999px;
+  background: #0e3180;
 }
 
-/* 문의하기 리스트 영역 (예시) */
-.notice-list-container {
-    height: 350px;
-    background: #fff;
+.location-heading p {
+  margin: 0;
+  color: #737e8e;
+  font-size: 16px;
+  line-height: 1.7;
 }
 
-/* 반응형 */
-@media (max-width: 992px) {
-    .grid-layout {
-        grid-template-columns: 1fr;
-    }
+.location-map-wrap {
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  overflow: hidden;
+  border-radius: 6px;
+  background: #dfe4e8;
+  box-shadow: 0 16px 44px rgba(27, 42, 70, .10);
+}
+
+.notice-map-section .map-box {
+  width: 100%;
+  height: 500px;
+  min-height: 500px;
+}
+
+.location-info {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  left: 38px;
+  width: min(310px, calc(100% - 76px));
+  padding: 30px 28px 27px;
+  border: 1px solid rgba(226, 231, 239, .9);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, .96);
+  box-shadow: 0 18px 48px rgba(23, 35, 57, .18);
+  transform: translateY(-50%);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+}
+
+.location-company {
+  display: block;
+  margin-bottom: 12px;
+  color: #0e3180;
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.location-info address {
+  margin: 0;
+  color: #202d45;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.55;
+  letter-spacing: -.025em;
+  word-break: keep-all;
+}
+
+.location-tel {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin: 18px 0 21px;
+  color: #26334b;
+}
+
+.location-tel span {
+  color: #778192;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.location-tel strong {
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: -.015em;
+}
+
+.location-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.location-buttons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  font-size: 16px;
+  font-weight: 700;
+  transition: transform .25s ease, background-color .25s ease;
+}
+
+.location-route {
+  color: #fff;
+  background: #0e3180;
+}
+
+.location-call {
+  color: #23314a;
+  background: #eef2f7;
+}
+
+.location-buttons a:hover {
+  transform: translateY(-2px);
+}
+
+.location-route:hover {
+  background: #163f99;
+}
+
+.location-call:hover {
+  background: #e2e8f1;
+}
+
+@media (max-width: 768px) {
+  .notice-map-section {
+    padding: 70px 14px;
+  }
+
+  .location-heading {
+    margin-bottom: 27px;
+  }
+
+  .notice-map-section .location-heading .section-title {
+    font-size: 32px;
+  }
+
+  .location-heading p {
+    font-size: 14px;
+  }
+
+  .location-map-wrap,
+  .notice-map-section .map-box {
+    min-height: 570px;
+    height: 570px;
+  }
+
+  .location-info {
+    top: auto;
+    right: 16px;
+    bottom: 16px;
+    left: 16px;
+    width: auto;
+    padding: 24px 22px 21px;
+    transform: none;
+  }
+
+  .location-info address {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 400px) {
+  .location-map-wrap,
+  .notice-map-section .map-box {
+    min-height: 540px;
+    height: 540px;
+  }
+
+  .location-buttons {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .location-buttons a {
+    transition: none;
+  }
 }
 </style>
 <script src="js/app.js" defer></script>
