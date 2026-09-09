@@ -206,52 +206,28 @@ header:hover .mega-menu {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6); /* 이미지 위에 30% 어두운 막 생성 */
   z-index: 1;
+  background: linear-gradient(135deg,rgba(30, 39, 52, 0.68) 0%,rgba(0, 0, 0, 0.58) 100%);
 }
 .hero-inner { position: absolute; z-index: 2; height: 100%; width: 100%; max-width: 1200px; left: 0;
   right: 0; margin: 0 auto; padding: 0 16px; display: flex; align-items: center; justify-content: center; text-align: center; pointer-events: none}
-.hero-text { max-width: 620px; pointer-events: auto;}
-.hero-title {  font-size: 5.2rem;
-  line-height: 1.2;
-  margin-bottom: 1.2rem;
-
-  background: linear-gradient(
-    90deg,
-    #3f5f66 0%,
-	#6fa6a1 40%,
-    #d1ffe9 100%
-  );
-
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-
-}
+.hero-text { max-width: 760px; pointer-events: auto;}
 .hero h1 { font-size: 2.2rem; margin-bottom: 1.2rem; line-height: 1.2; text-shadow: none; color: #fff; }
 .hero p { font-size: 1.3rem; margin-bottom: 2.5rem; color: rgba(255,255,255,0.9); }
-.point  {color:#0E3180; font-size: 3.2rem;}
-.fx-underline{position:relative; color:#fff; text-shadow:4px 7px 7px #333;}
-.fx-underline::after{content:""; position:absolute; left:0; right:0; bottom:-3px; z-index: -2; height:10px; background:linear-gradient(90deg,#b2f1d6,#0E3180); transform:scaleX(0); transform-origin: left; animation:underline 1.2s .5s ease-out forwards}
 @keyframes underline{to{transform:scaleX(1)}}
-
-.hero::after {
-    background: linear-gradient(135deg, rgba(44, 67, 73, 0.85) 0%, rgba(0, 0, 0, 0.7) 100%);
-}
-
 .hero-title {
     background: none;
     -webkit-background-clip: border-box;
     background-clip: border-box;
     color: #ffffff;
     font-weight: 800;
-    letter-spacing: -1px;
-    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-    font-size: 5.2rem;
+    letter-spacing: -3px;
+    text-shadow: 0 3px 12px rgba(0, 0, 0, 0.35);
     line-height: 1.1;
-    margin-bottom: 1.5rem;
     display: block;
-}
+    font-size: 5.2rem;
+    margin-bottom: 54px;
+  }
 
 .hero h1 {
     color: #f0f0f0;
@@ -260,25 +236,55 @@ header:hover .mega-menu {
     line-height: 1.4;
 }
 
-.point {
-    font-weight: 700;
-    font-size: 3.4rem;
-    text-shadow: 0 0 10px #b3e8ff; /*rgba(0, 229, 255, 0.5);*/
+.point {color:#7EA7FF; font-weight: 700; font-size: 3.4rem;}
+.fx-underline{position:relative; color:rgba(255, 255, 255, 0.92); font-weight: 500; display: block; margin-bottom: 0.5rem; text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  font-size: 2.7rem; line-height: 1.35; letter-spacing: -1.8px;}
+.fx-underline::after { display: none;}
+.fx-underline .point {
+  position: relative;
+  display: inline-block;
+
+  margin-left: 5px;
+
+  color: #8eaeff;
+  font-size: inherit;
+  font-weight: 800;
+  line-height: inherit;
+
+  text-shadow: none;
 }
 
-.fx-underline {
-    text-shadow: none;
-    font-weight: 500;
-    display: inline-block;
-    margin-bottom: 0.5rem;
+/* 핵심 문구에만 밑줄 */
+.fx-underline .point::after {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: -7px;
+
+  height: 4px;
+  border-radius: 10px;
+
+  background: linear-gradient(
+    90deg,
+    #8eaeff 0%,
+    rgba(142, 174, 255, 0.12) 100%
+  );
+
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: underline 1.1s 0.4s ease-out forwards;
 }
+.hero h1 small {
+  display: block;
 
-.fx-underline::after {
-    height: 3px; 
-    bottom: -1px;
-    /*background: linear-gradient(90deg, #00e5ff, rgba(44, 67, 73, 0));*/
-	background: linear-gradient(90deg, #b3e8ff, rgba(44, 67, 73, 0));
-
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 7px rgba(0, 0, 0, 0.35);
 }
 
 @media (max-width: 1024px) {
@@ -291,12 +297,18 @@ header:hover .mega-menu {
     .hero h1 {
         font-size: 1.8rem;
     }
+	.fx-underline {
+		font-size: 2.25rem;
+	}
+	.hero h1 small {
+		font-size: 1.15rem;
+	}
 }
 
 @media (max-width: 768px) {
     .hero-title {
         font-size: 3rem;
-        margin-bottom: 1rem;
+        margin-bottom: 1rem; letter-spacing: -2px;
     }
     .point {
         font-size: 2.2rem;
@@ -305,10 +317,26 @@ header:hover .mega-menu {
         font-size: 1.4rem;
         line-height: 1.3;
     }
+	.fx-underline {
+		margin-bottom: 15px;
+		font-size: 1.8rem;
+		letter-spacing: -1.2px;
+	}
     .fx-underline::after {
         height: 2px;
     }
+	.fx-underline .point {
+		margin-left: 2px;
+	}
 	
+	.fx-underline .point::after {
+		bottom: -4px;
+		height: 3px;
+	}
+	
+	.hero h1 small {
+		font-size: 1rem;
+	}
 	.nav-item {
     flex-direction: column; /* 메뉴와 서브메뉴를 세로로 정렬 */
     align-items: flex-start;
@@ -341,8 +369,11 @@ header:hover .mega-menu {
   max-width: 1200px;
   margin: 0 auto 32px;
   padding: 0 16px;
-  font-size: 28px;
-  font-weight: 600;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #0E3180;
+  margin-bottom: 50px;
+  font-weight: 800;
 }
 
 .notice {
@@ -353,14 +384,6 @@ header:hover .mega-menu {
 .notice-map-section {
     padding: 80px 0;
     background-color: #f9f9f9;
-}
-
-.section-title {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #0E3180;
-    margin-bottom: 50px;
-    font-weight: 800;
 }
 
 .grid-layout {
@@ -659,6 +682,17 @@ header:hover .mega-menu {
 }
 
 @media (max-width: 480px) {
+	.hero-title {
+    font-size: 2.25rem;
+  }
+
+  .fx-underline {
+    font-size: 1.45rem;
+  }
+
+  .hero h1 small {
+    font-size: 0.9rem;
+  }
     .btn-group {
         flex-direction: column;
     }
@@ -1258,27 +1292,11 @@ header:hover .mega-menu {
 	height: 70%;
 	margin-top: 44px;
   }
-
-  .hero-title {
-    font-size: 2.25rem; /* 메인 타이틀 크기 축소 */
-    display: block;
-    margin-bottom: 10px;
-  }
   .point {font-size: 1.8rem;}
   .hero h1 {font-size:1rem; line-height:1.2;}
 
-  .fx-underline {
-    font-size: 1.25rem;
-    display: inline-block;
-    margin-bottom: 5px;
-  }
-  
+  .fx-underline { display: block; margin-bottom: 19px; color: rgba(255, 255, 255, 0.92); font-size: 2.7rem; font-weight: 500; line-height: 1.35; letter-spacing: -1.8px;}
   .fx-underline::after {height:3px;}
-
-  .hero-text br {
-    display: none;
-  }
-
   .mobile-br {
     display: block;
     content: "";
