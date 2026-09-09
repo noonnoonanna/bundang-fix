@@ -1428,8 +1428,8 @@ img {
     width: 100%;
     max-width: none;
     height: 60px;
-    padding: 0 12px !important;
-    grid-template-columns: minmax(100px, 1fr) auto auto !important;
+    padding: 0 16px;
+    grid-template-columns: minmax(105px, 1fr) auto minmax(38px, 1fr) !important;
     column-gap: 10px;
   }
 
@@ -1448,66 +1448,30 @@ img {
 
   header .partner-logo {
     grid-column: 2;
-    justify-self: end;
-    justify-content: flex-end;
+    justify-self: center;
+    justify-content: center;
     align-items: flex-start;
-    height: 34px;
+    height: 30px;
     margin: 0;
-    gap: 7px;
-    display: flex !important;
-    width: auto !important;
-    min-width: max-content !important;
-    flex-shrink: 0 !important;
-    z-index: 2 !important;
-  }
-  
-  header .partner-logo .call-bubble {
-	 border-radius: 5px;
-    display: inline-flex !important;
-    flex: 0 0 auto !important;
-    width: auto !important;
-    height: 28px !important;
-    padding: 0 9px !important;
-    font-size: 11px !important;
-  }
-  
-  header .partner-logo a:not(.call-bubble) {
-    display: flex !important;
-    flex: 0 0 34px !important;
-    width: 34px !important;
-    min-width: 34px !important;
-    height: 34px !important;
-    overflow: visible !important;
-  }
-  
-  header .partner-logo a:not(.call-bubble) img {
-    display: block !important;
-    width: 34px !important;
-    min-width: 34px !important;
-    max-width: none !important;
-    height: 34px !important;
-    object-fit: contain !important;
+    gap: 5px;
   }
 
-  header .call-bubble::after {
-    bottom: -6px;
-    border-left-width: 6px;
-    border-right-width: 6px;
-    border-top-width: 6px;
+  header .call-bubble {
+    height: 25px;
+    padding: 0 8px;
+    font-size: 11px;
   }
 
   header .partner-logo img {
-    height: 35px;
+    height: 30px;
   }
-  
+
   header .hamburger {
-	display: block;
+    display: block;
+    grid-column: 3;
+    justify-self: end;
     font-size: 0;
     line-height: 1;
-    grid-column: 3 !important;
-    justify-self: end !important;
-    margin: 0 !important;
-    z-index: 3 !important;
   }
 
   header .hamburger::after {
@@ -1731,8 +1695,8 @@ img {
 @media (max-width: 600px) {
   header .header-inner {
     padding: 0 12px;
-    grid-template-columns: minmax(92px, 1fr) auto auto !important;
-    column-gap: 10px;
+    grid-template-columns: minmax(92px, 1fr) auto minmax(34px, 1fr) !important;
+    column-gap: 7px;
   }
 
   header .logo img {
@@ -1740,18 +1704,17 @@ img {
   }
 
   header .partner-logo {
-    height: 33px;
-    gap: 6px;
+    gap: 4px;
   }
 
   header .call-bubble {
-    height: 27px;
-    padding: 0 9px;
-    font-size: 11px;
+    height: 23px;
+    padding: 0 7px;
+    font-size: 10px;
   }
 
   header .partner-logo img {
-    height: 33px;
+    height: 28px;
   }
 
   body .hero {
@@ -1984,53 +1947,17 @@ img {
   }
 }
 
-@media (max-width: 380px) {  
+@media (max-width: 380px) {
   header .header-inner {
-    grid-template-columns: minmax(90px, 1fr) auto auto !important;
-    column-gap: 7px !important;
-    padding: 0 9px !important;
+    grid-template-columns: minmax(86px, 1fr) auto 31px !important;
   }
 
   header .logo img {
-    height: 30px !important;
-  }
-
-  header .partner-logo {
-    display: flex;
-    height: 32px;
-    gap: 5px;
-  }
-  
-  header .partner-logo .call-bubble {
-    height: 27px !important;
-    padding: 0 8px !important;
-    font-size: 10px !important;
+    height: 31px;
   }
 
   header .partner-logo a:not(.call-bubble) {
-    display: flex !important;
-    flex-basis: 32px !important;
-
-    width: 32px !important;
-    min-width: 32px !important;
-    height: 32px !important;
-  }
-  
-  header .partner-logo a:not(.call-bubble) img {
-    display: block !important;
-
-    width: 32px !important;
-    min-width: 32px !important;
-    max-width: none !important;
-    height: 32px !important;
-  }
-  
-  header .partner-logo img {
-    height: 32px;
-  }
-
-  header .hamburger::after {
-    font-size: 24px !important;
+    display: none;
   }
 
   body .hero {
