@@ -86,4 +86,47 @@ document.addEventListener('DOMContentLoaded', () => {
       hamburger.textContent = '☰';
     }
   });
+  
+  //전화번호 복사
+  const locationCall = document.querySelector('.location-call');
+  const iscall = document.querySelector('.is-call');
+
+	if (locationCall) {
+	locationCall.addEventListener('click', async function (event) {
+		const isDesktop = window.matchMedia('(min-width: 769px)').matches;
+	
+		if (!isDesktop) return;
+	
+		event.preventDefault();
+	
+		const phoneNumber = this.dataset.phone;
+	
+		try {
+		await navigator.clipboard.writeText(phoneNumber);
+		alert(`전화번호가 복사되었습니다.`);
+		} catch (error) {
+		prompt('전화번호를 복사해 주세요.', phoneNumber);
+		}
+	});
+	}
+	
+	
+	if (iscall) {
+	iscall.addEventListener('click', async function (event) {
+		const isDesktop2 = window.matchMedia('(min-width: 769px)').matches;
+	
+		if (!isDesktop2) return;
+	
+		event.preventDefault();
+	
+		const phoneNumber2 = this.dataset.phone;
+	
+		try {
+		await navigator.clipboard.writeText(phoneNumber2);
+		alert(`전화번호가 복사되었습니다.`);
+		} catch (error) {
+		prompt('전화번호를 복사해 주세요.', phoneNumber2);
+		}
+	});
+	}
 });

@@ -31,7 +31,7 @@ header {
   margin: 0 auto;
   padding: 0 16px;
   display: grid;
-  grid-template-columns: 200px 50px repeat(4, 1fr) 120px;
+  grid-template-columns: 200px 88px repeat(3, 1fr) 80px;
   align-items: center;
 }
 
@@ -43,12 +43,12 @@ header {
   height: 80px;
 }
 .logo img {
-  height: 56px;
+  height: 52px;
   display: block;
 }
 
 .partner-logo {
-  grid-column: 7;
+  grid-column: 6;
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
@@ -110,13 +110,13 @@ header {
 }
 
 .nav {
-  grid-column: 3 / 7;
+  grid-column: 3 / 6;
   height: 100%;
 }
 
 .nav-menu {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   height: 100%;
 }
 
@@ -124,8 +124,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  font-size: 19px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 700;
   color: #0E3180;
   cursor: pointer;
   height: 80px;
@@ -163,11 +163,10 @@ header:hover .mega-menu {
 .mega-col:nth-child(1) { grid-column: 3; }
 .mega-col:nth-child(2) { grid-column: 4; }
 .mega-col:nth-child(3) { grid-column: 5; }
-.mega-col:nth-child(4) { grid-column: 6; }
 
 .mega-col a {
   color: #26354F;
-  font-size: 16px;
+  font-size: 17px;
   transition: 0.2s;
   line-height: 25px;
 }
@@ -2239,13 +2238,6 @@ img {
   letter-spacing: -.045em;
 }
 
-.subpage-description {
-  margin: 17px 0 0;
-  color: rgba(255, 255, 255, .9);
-  font-size: 18px;
-  line-height: 1.7;
-}
-
 .subpage-breadcrumb {
   display: flex;
   justify-content: center;
@@ -2530,11 +2522,6 @@ img {
     font-size: 36px;
   }
 
-  .subpage-description {
-    font-size: 15px;
-    line-height: 1.65;
-  }
-
   .subpage-breadcrumb {
     margin-top: 21px;
     font-size: 12px;
@@ -2791,15 +2778,18 @@ img {
 }
 
 .service-consult-actions a {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 170px;
-  min-height: 50px;
-  padding: 0 20px;
-  border-radius: 5px;
-  font-size: 16px;
+  min-width: 230px;
+  min-height: 64px;
+  padding: 10px 22px;
+  gap: 2px;
+  flex-direction: column;
+  border-radius: 6px;
+  font-size: 15px;
   font-weight: 700;
+  line-height: 1.35;
 }
 
 .service-consult-actions .is-call {
@@ -2807,10 +2797,24 @@ img {
   background: #fff;
 }
 
-.service-consult-actions .is-contact {
+.service-consult-actions .is-call strong {
+  display: block;
+  color: #0e3180;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.service-consult-actions .is-message {
   color: #fff;
-  border: 1px solid rgba(255, 255, 255, .52);
+  border: 1px solid rgba(255, 255, 255, .55);
   background: transparent;
+}
+
+.service-consult-actions .is-message span {
+  display: block;
+  color: rgba(255, 255, 255, .74);
+  font-size: 12px;
+  font-weight: 500;
 }
 
 @media (max-width: 900px) {
@@ -2838,19 +2842,26 @@ img {
   }
 
   .service-category-nav {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     margin-bottom: 34px;
     border-radius: 6px;
   }
 
   .service-category-nav a {
-    min-height: 51px;
-    border-right: 0;
-    border-bottom: 1px solid #dfe5ed;
-    font-size: 15px;
+    min-width: 0;
+    min-height: 54px;
+    padding: 8px 3px;
+
+    border-right: 1px solid #dfe5ed;
+    border-bottom: 0;
+
+    font-size: 14px;
+    line-height: 1.25;
+    white-space: nowrap;
   }
 
   .service-category-nav a:last-child {
+    border-right: 0;
     border-bottom: 0;
   }
 
@@ -2892,7 +2903,7 @@ img {
   }
 
   .service-consult-inner h2 {
-    font-size: 27px;
+    font-size: 25px;
   }
 
   .service-consult-inner p {

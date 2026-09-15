@@ -1,0 +1,32 @@
+/* 분당 종합 집수리 - 서비스 안내 전용 스타일 */
+.service-page{--service-blue:#0e3180;--service-text:#263247;--service-muted:#697386;--service-line:#dce3ec;--service-sky:#eaf3ff;--service-beige:#f6f2e9;color:var(--service-text)}
+.service-detail-container,.service-extra-container,.service-consult-inner{width:min(1200px,calc(100% - 32px));margin:0 auto}
+.service-detail-section{padding:54px 0 70px}
+.service-category-nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));overflow:hidden;margin-bottom:46px;border:1px solid var(--service-line);border-radius:7px}
+.service-category-nav a{display:flex;min-width:0;min-height:58px;align-items:center;justify-content:center;padding:10px 8px;border-right:1px solid var(--service-line);color:#506078;font-weight:700;line-height:1.35;text-align:center;transition:.2s}
+.service-category-nav a:last-child{border-right:0}.service-category-nav a:hover,.service-category-nav a.is-active{background:var(--service-blue);color:#fff}
+.service-detail-panel{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(34px,5vw,64px);align-items:center}.service-detail-panel[hidden]{display:none}
+.service-detail-image{overflow:hidden;width:100%;max-width:520px;height:360px;border-radius:10px}.service-detail-image img{display:block;width:100%;height:100%;object-fit:cover}
+.service-detail-number,.service-extra-eyebrow{display:block;margin-bottom:10px;color:var(--service-blue);font-family:"Noto Sans KR",sans-serif;font-size:13px;font-weight:700;letter-spacing:.14em}
+.service-detail-copy h2,.service-extra-container>h2{margin:0;font-family:"Noto Sans KR",sans-serif;font-size:clamp(28px,3vw,42px);font-weight:900;line-height:1.3;letter-spacing:-.04em}
+.service-detail-copy>p{margin:16px 0 26px;color:var(--service-muted);font-size:17px;line-height:1.8}
+.service-work-list{margin:0;padding:0;list-style:none;border-top:1px solid var(--service-line)}.service-work-list li{display:grid;grid-template-columns:minmax(120px,.8fr) minmax(0,1.4fr);gap:16px;padding:15px 0;border-bottom:1px solid var(--service-line)}.service-work-list strong{color:var(--service-blue)}.service-work-list span{color:var(--service-muted)}
+
+/* 이런 경우 작업을 상담해 보세요 */
+.service-check-section{padding:76px 0;background:var(--service-sky)}
+.service-check-lead,.service-gallery-lead{margin:13px 0 0;color:var(--service-muted);font-size:16px;line-height:1.75}
+.service-check-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:30px 0 0;padding:0;list-style:none}
+.service-check-list li{display:flex;gap:13px;align-items:flex-start;padding:19px 20px;border-radius:9px;background:#fff}.service-check-list li>span{display:inline-flex;flex:0 0 24px;width:24px;height:24px;align-items:center;justify-content:center;border-radius:50%;background:var(--service-blue);color:#fff;font-size:13px;font-weight:700}.service-check-list p{margin:0;line-height:1.65}
+
+/* 현장 작업 모습 */
+.service-gallery-section{padding:76px 0;background:#fff}.service-gallery-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:30px}
+.service-gallery-list figure{position:relative;overflow:hidden;min-height:280px;margin:0;border-radius:9px;background:var(--service-sky)}.service-gallery-list img{display:block;width:100%;height:280px;object-fit:cover;transition:transform .35s ease}.service-gallery-list figure:hover img{transform:scale(1.035)}
+.service-gallery-list figcaption{position:absolute;right:0;bottom:0;left:0;padding:42px 18px 17px;background:linear-gradient(transparent,rgba(9,28,60,.82));color:#fff;font-size:17px;font-weight:700}
+
+/* 자주 묻는 질문 */
+.service-faq-section{padding:76px 0;background:var(--service-beige)}.service-faq-list{margin-top:30px;border-top:1px solid #d9d2c5}.service-faq-list details{border-bottom:1px solid #d9d2c5}
+.service-faq-list summary{display:flex;min-height:68px;align-items:center;justify-content:space-between;gap:18px;cursor:pointer;font-size:16px;font-weight:700;list-style:none}.service-faq-list summary::-webkit-details-marker{display:none}.service-faq-list summary::after{content:"+";flex:0 0 auto;color:var(--service-blue);font-size:25px;font-weight:500}.service-faq-list details[open] summary::after{content:"−"}.service-faq-list details p{margin:0;padding:0 44px 22px 0;color:var(--service-muted);font-size:15px;line-height:1.75}
+
+@media(max-width:900px){.service-detail-panel{grid-template-columns:1fr}.service-detail-image{max-width:none;height:340px}.service-gallery-list figure,.service-gallery-list img{min-height:230px;height:230px}}
+@media(max-width:600px){.service-detail-container,.service-extra-container,.service-consult-inner{width:calc(100% - 24px)}.service-detail-section{padding:54px 0}.service-category-nav{margin-bottom:32px}.service-category-nav a{min-height:54px;padding:8px 3px;font-size:clamp(11px,3.4vw,14px);line-height:1.25;letter-spacing:-.05em;white-space:nowrap}.service-detail-panel{gap:28px}.service-detail-image{height:230px}.service-detail-copy>p{font-size:15px}.service-work-list li{grid-template-columns:1fr;gap:5px}.service-check-section,.service-gallery-section,.service-faq-section{padding:56px 0}.service-check-list{grid-template-columns:1fr;gap:8px;margin-top:24px}.service-check-list li{padding:15px 14px}.service-gallery-list{grid-template-columns:1fr;gap:10px;margin-top:24px}.service-gallery-list figure,.service-gallery-list img{min-height:220px;height:220px}.service-faq-list{margin-top:24px}.service-faq-list summary{min-height:62px;font-size:15px}.service-faq-list details p{padding:0 32px 19px 0;font-size:14px}}
+@media(max-width:360px){.service-category-nav a{font-size:11px}}
